@@ -1,0 +1,54 @@
+body{
+    background-color:antiquewhite;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1 {
+    text-align: center;
+    }
+
+form {
+    padding: 25px;
+    background-color: bisque;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: inset;
+    border-color: black;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+    
+.form-Label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cont {
+    margin-top: 15%;
+}
+    
+.container {
+    font-size: 25px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+    
+input, textarea, select {
+    font-size: inherit;
+}
+    
+.btn{
+    display: block;
+    height: 40px;
+    width: 150px;
+    margin: 0 auto;
+    background-color: rgb(63,66,255);
+    border: 1px solid rgb(17,227,255);
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}

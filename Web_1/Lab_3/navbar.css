@@ -1,0 +1,12 @@
+nav:before {
+    content:''; 
+    background:#34335c;
+}
+
+.panel {
+    padding:0 15px;
+}
+
+ul {
+    padding-left: 57%;
+}

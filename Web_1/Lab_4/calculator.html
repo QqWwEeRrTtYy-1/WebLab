@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+<main>
+  <div class="container">
+    <div class="container_wrapper">
+
+
+      <div class="calculator">
+        <div class="calculator__wrapper">
+          <div class="calc_top">
+            <div class="expression">
+              <p class="expression__wrapper" id="expression"></p>
+            </div>
+
+            <div class="result">
+              <p id="result"></p>
+            </div>
+          </div>
+
+          <div class="calc_bottom">
+            <div class="calc-line">
+              <button type="button" class="calc_btn dark-gray-btn oval" data-symbol="(">(</button>
+              <button type="button" class="calc_btn dark-gray-btn oval" data-symbol=")">)</button>
+              <button type="button" class="calc_btn dark-gray-btn oval">sin</button>
+              <button type="button" class="calc_btn dark-gray-btn oval">cos</button>
+            </div>
+
+            <div class="calc-line">
+              <button type="button" class="calc_btn light-gray-btn sqr" id="delete-all">Ac</button>
+              <button type="button" class="calc_btn light-gray-btn sqr" id="delete-one">
+                <img src="img/delete.svg" alt="Delete">
+              </button>
+              <button type="button" class="calc_btn sqr dark-blue-btn" data-symbol="/">/</button>
+              <button type="button" class="calc_btn sqr dark-blue-btn" data-symbol="*">
+                <img src="img/multiply.svg" alt="Multiply">
+              </button>
+            </div>
+
+            <div class="calc-line">
+              <button type="button" class="calc_btn dark-gray-btn sqr" data-symbol="7">7</button>
+              <button type="button" class="calc_btn dark-gray-btn sqr" data-symbol="8">8</button>
+              <button type="button" class="calc_btn dark-gray-btn sqr" data-symbol="9">9</button>
+              <button type="button" class="calc_btn dark-blue-btn sqr" data-symbol="-">&ndash;</button>
+            </div>
+
+            <div class="calc-line">
+              <button type="button" class="calc_btn dark-gray-btn sqr" data-symbol="4">4</button>
+              <button type="button" class="calc_btn dark-gray-btn sqr" data-symbol="5">5</button>
+              <button type="button" class="calc_btn dark-gray-btn sqr" data-symbol="6">6</button>
+              <button type="button" class="calc_btn dark-blue-btn sqr" data-symbol="+">+</button>
+            </div>
+
+            <div class="calc-line">
+              <div class="button-btn__wrapper">
+                <div class="button-nums">
+                  <div class="up-nums">
+                    <button type="button" class="calc_btn dark-gray-btn sqr w-[33]" data-symbol="1">1</button>
+                    <button type="button" class="calc_btn dark-gray-btn sqr w-[33]" data-symbol="2">2</button>
+                    <button type="button" class="calc_btn dark-gray-btn sqr w-[33]" data-symbol="3">3</button>
+                  </div>
+                  <div class="down-nums">
+                    <button type="button" class="calc_btn dark-gray-btn sqr rectangle" data-symbol="0">0</button>
+                    <button type="button" class="calc_btn dark-gray-btn sqr w-[33]">.</button>
+                  </div>
+                </div>
+
+                <div class="button-action">
+                  <button type="button" class="calc_btn dark-gray-btn sqr action" id="equally">=</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="js/calculator.js"></script>
+</body>
+</html>
