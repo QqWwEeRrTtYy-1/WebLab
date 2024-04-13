@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Moscow Tourists</title>
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img src="img/llogo.png" class="img-fluid" alt="logo"  style="width: 3vw; height: 6vh;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html"><H2>Главная</H2></a>
+              <a class="nav-link" href="lk.html"><H2>Личный кабинет</H2></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+
+  <div class="container">
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      Скидки пенсионерам 25% !
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div class="center">
+       <img src="img/logo.png" class="img-fluid my-image">
+
+       <ul class="list-group list-group-flush custom-list">
+        <li class="list-group-item">Основаны в 1995 году</li>
+        <li class="list-group-item">Множество наград</li>
+        <li class="list-group-item">Самые актуальные маршруты</li>
+        <li class="list-group-item">Отзывчивость и трудолюбие</li>
+        <li class="list-group-item">Занимаемся благотворительностью</li>
+        <li class="list-group-item">Спонсоры спартакиад</li>
+      </ul>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Наше достоинство №1 Гиды
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Лучшие гиды с многолетним опытом</strong> говорящие на <strong>множестве языков</strong> обеспечат вам удивительное путешествие по любой части Москвы!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Наше достоинство №2 Маршруты
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Актуальность и красота</strong> маршрутов не могут не удивить даже самых искушенных путешественников!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Наше достоинство №3 Стоимость
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Ценообразование </strong> прогулок держит фокус на основных гостях столицы, а <strong>скидки</strong> никого не оставят равнодушным!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="map" class="d-flex flex-column gap-4">
+      <h2 class="fw-bolder mb-0" data-aos="zoom-in" data-aos-once="true">
+        Карта точек начала маршрутов
+      </h2>
+
+      <div data-aos="zoom-in" data-aos-once="true">
+        <iframe style="width: 68vw;" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a09d159802cd0a4dba9f1158c97d14e5dd0d42be23284e090138a84709d2c97&amp;source=constructor" width="700" height="660" frameborder="0"></iframe>
+      </div>
+    </div>
+
+    <div id="places" class="d-flex flex-column gap-4">
+      <h2 class="fw-bolder mb-0" data-aos="zoom-in" data-aos-once="true">
+        Список пешеходных маршрутов
+      </h2>
+
+      <div class="position-relative w-50" data-aos="zoom-in" data-aos-once="true">
+        <input class="border-black border-opacity-25 rounded-5 px-3 py-2 w-100 text-black text-opacity-50" style="border-style: solid;" type="text" name="search_by_name" oninput="searchRows(this, 'travelName')" placeholder="Поиск по названию">
+      </div>
+
+      <div class="d-flex flex-column gap-4 align-items-center">
+        <table class="table">
+          <thead data-aos="zoom-in" data-aos-once="true">
+          <tr>
+            <th scope="col" class="text-start">Название</th>
+            <th scope="col" class="text-center">Описание</th>
+            <th scope="col" class="text-center">Основные объекты</th>
+            <th scope="col"></th>
+          </tr>
+          </thead>
+          <tbody id="mainEventList"></tbody>
+        </table>
+
+        <div class="d-flex gap-2" data-aos="zoom-in" data-aos-once="true">
+          <div role="button" class="pagination-size bg-main-color p-2 rounded-circle d-flex justify-content-center align-items-center">
+            <img width="24" src="img/arrow3.svg" alt="Arrow">
+          </div>
+
+          <div role="button" class="pagination-size bg-main-color p-2 rounded-circle d-flex justify-content-center align-items-center">
+            <img width="24" src="img/arrow.svg" alt="Arrow">
+          </div>
+
+          <div class="d-flex gap-2" id="routerPagination"></div>
+
+          <div role="button" class="pagination-size bg-main-color p-2 rounded-circle d-flex justify-content-center align-items-center">
+            <img width="24" class="rotate-180" src="img/arrow.svg" alt="Arrow">
+          </div>
+
+          <div role="button" class="pagination-size bg-main-color p-2 rounded-circle d-flex justify-content-center align-items-center">
+            <img width="24" class="rotate-180" src="img/arrow3.svg" alt="Arrow">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <p>Тел.: <a href="tel:#"> +7(977)777-77-77</a></p>
+    <p>Email:<a href="mailto:#"> moscow_tourists@gmail.ru</a></p>
+    <p class="col-md-4 mb-0 text-body-secondary">© 2024 ООО "Moscow Tourists"</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/getRouters.js"></script>
+<script src="js/searching.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="icon" href="img/favicon.ico">
+  <title>Moscow Tourists - Личный кабинет</title>
+</head>
+<body class="d-flex flex-column justify-content-between mh-100 h-100">
+
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img src="img/llogo.png" class="img-fluid" alt="logo"  style="width: 3vw; height: 6vh;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html"><H2>Главная</H2></a>
+          <a class="nav-link" href="lk.html"><H2>Личный кабинет</H2></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="d-flex flex-column align-items-center pt-4 pb-5">
+  <div class="w-85 d-flex flex-column gap-5">
+    <div id="places" class="d-flex flex-column gap-4">
+      <h2 class="fw-bolder mb-0" data-aos="zoom-in" data-aos-once="true">
+        Список пешеходных маршрутов
+      </h2>
+
+      <div class="d-flex flex-column gap-4 align-items-center">
+        <table class="table">
+          <thead data-aos="zoom-in" data-aos-once="true">
+          <tr>
+            <th scope="col" class="text-start">№</th>
+            <th scope="col" class="text-center">Название</th>
+            <th scope="col" class="text-center">Дата</th>
+            <th scope="col" class="text-center">Стоимость</th>
+            <th scope="col"></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr data-aos="zoom-in" data-aos-once="true">
+            <td class="text-start" data-row="travelNumber">1</td>
+            <td class="text-center" data-row="travelName">Кремль</td>
+            <td class="text-center" data-row="travelDate">17.01.2024</td>
+            <td class="text-center"><span data-row="travelCost">4580</span> ₽</td>
+            <td class="w-25">
+              <div class="d-flex gap-3 justify-content-end">
+                <button>Просмотр</button>
+
+                <button>Редактирование</button>
+
+                <button>Удалить</button>
+              </div>
+            </td>
+          </tr>
+
+          <tr data-aos="zoom-in" data-aos-once="true">
+            <td class="text-start" data-row="travelNumber">2</td>
+            <td class="text-center" data-row="travelName">Воробьёвы горы</td>
+            <td class="text-center" data-row="travelDate">22.01.2024</td>
+            <td class="text-center"><span data-row="travelCost">4580</span> ₽</td>
+            <td class="w-25">
+              <div class="d-flex gap-3 justify-content-end">
+                <button>Просмотр</button>
+
+                <button>Редактирование</button>
+
+                <button>Удалить</button>
+              </div>
+            </td>
+          </tr>
+
+          <tr data-aos="zoom-in" data-aos-once="true">
+            <td class="text-start" data-row="travelNumber">3</td>
+            <td class="text-center" data-row="travelName">ВДНХ</td>
+            <td class="text-center" data-row="travelDate">27.01.2024</td>
+            <td class="text-center"><span data-row="travelCost">4580</span> ₽</td>
+            <td class="w-25">
+              <div class="d-flex gap-3 justify-content-end">
+                <button>Просмотр</button>
+
+                <button>Редактирование</button>
+
+                <button>Удалить</button>
+              </div>
+            </td>
+          </tr>
+
+          <tr data-aos="zoom-in" data-aos-once="true">
+            <td class="text-start" data-row="travelNumber">4</td>
+            <td class="text-center" data-row="travelName">Парк Горькова</td>
+            <td class="text-center" data-row="travelDate">07.02.2024</td>
+            <td class="text-center"><span data-row="travelCost">4580</span> ₽</td>
+            <td class="w-25">
+              <div class="d-flex gap-3 justify-content-end">
+                <button>Просмотр</button>
+
+                <button>Редактирование</button>
+
+                <button>Удалить</button>
+              </div>
+            </td>
+          </tr>
+
+          <tr data-aos="zoom-in" data-aos-once="true">
+            <td class="text-start" data-row="travelNumber">5</td>
+            <td class="text-center" data-row="travelName">Лужники</td>
+            <td class="text-center" data-row="travelDate">19.02.2024</td>
+            <td class="text-center"><span data-row="travelCost">4580</span> ₽</td>
+            <td class="w-25">
+              <div class="d-flex gap-3 justify-content-end">
+                <button>Просмотр</button>
+
+                <button>Редактирование</button>
+
+                <button>Удалить</button>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <div class="d-flex gap-2" data-aos="zoom-in" data-aos-once="true">
+          <div role="button" class="pagination-size bg-main-color p-2 rounded-circle d-flex justify-content-center align-items-center">
+            <img width="24" src="img/arrow3.svg" alt="Arrow">
+          </div>
+
+          <div role="button" class="pagination-size bg-main-color p-2 rounded-circle d-flex justify-content-center align-items-center">
+            <img width="24" src="img/arrow.svg" alt="Arrow">
+          </div>
+
+          <div role="button" class="pagination-size bg-main-color p-2 rounded-circle fw-medium d-flex justify-content-center align-items-center">1</div>
+
+          <div role="button" class="pagination-size bg-main-color p-2 rounded-circle fw-medium d-flex justify-content-center align-items-center">2</div>
+
+          <div role="button" class="pagination-size bg-main-color p-2 rounded-circle fw-medium d-flex justify-content-center align-items-center">3</div>
+
+          <div role="button" class="pagination-size bg-main-color p-2 rounded-circle d-flex justify-content-center align-items-center">
+            <img width="24" class="rotate-180" src="img/arrow.svg" alt="Arrow">
+          </div>
+
+          <div role="button" class="pagination-size bg-main-color p-2 rounded-circle d-flex justify-content-center align-items-center">
+            <img width="24" class="rotate-180" src="img/arrow3.svg" alt="Arrow">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <p>Тел.: <a href="tel:#"> +7(977)777-77-77</a></p>
+    <p>Email:<a href="mailto:#"> moscow_tourists@gmail.ru</a></p>
+    <p class="col-md-4 mb-0 text-body-secondary">© 2024 ООО "Moscow Tourists"</p>
+  </div>
+</footer>
+
+<script src="js/options.js"></script>
+<script src="js/modalLk.js"></script>
+</body>
+</html>
